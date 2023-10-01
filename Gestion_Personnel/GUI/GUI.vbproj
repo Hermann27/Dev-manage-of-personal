@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD5F4C91-0DF2-4273-9184-311C7296C8A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GUI.My.MyApplication</StartupObject>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GPEL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>14Folder_Opened.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GPEL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GPEL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormUtilisateur.Designer.vb">
+      <DependentUpon>FormUtilisateur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtilisateur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCongers.Designer.vb">
+      <DependentUpon>FrmCongers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCongers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDemarrage.Designer.vb">
+      <DependentUpon>FrmDemarrage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDemarrage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEntreprises.Designer.vb">
+      <DependentUpon>FrmEntreprises.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntreprises.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAuthentification.Designer.vb">
+      <DependentUpon>FrmAuthentification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAuthentification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmtest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmtest.Designer.vb">
+      <DependentUpon>Frmtest.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonnel.Designer.vb">
+      <DependentUpon>FrmPersonnel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonnel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSynchronisation.Designer.vb">
+      <DependentUpon>FrmSynchronisation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSynchronisation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information.Designer.vb">
+      <DependentUpon>Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModCap.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormUtilisateur.resx">
+      <DependentUpon>FormUtilisateur.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCongers.resx">
+      <DependentUpon>FrmCongers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDemarrage.resx">
+      <DependentUpon>FrmDemarrage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntreprises.resx">
+      <DependentUpon>FrmEntreprises.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAuthentification.resx">
+      <DependentUpon>FrmAuthentification.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmtest.resx">
+      <DependentUpon>Frmtest.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonnel.resx">
+      <DependentUpon>FrmPersonnel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSynchronisation.resx">
+      <DependentUpon>FrmSynchronisation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information.resx">
+      <DependentUpon>Information.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.vbproj">
+      <Project>{1C48C21A-783F-4E42-A32D-0E8EF40B4824}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BO\BO.vbproj">
+      <Project>{332D7154-4F7F-4DCF-9B76-2675DE633B26}</Project>
+      <Name>BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.vbproj">
+      <Project>{DDF5170F-4551-4AD8-AE69-E87270124B78}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="14Folder_Opened.ico" />
+    <Content Include="Resources\10Desktop.ico" />
+    <Content Include="Resources\10Desktop_New1.ico" />
+    <Content Include="Resources\13Floppy_Drive.ico" />
+    <Content Include="Resources\13Floppy_Drive_New1.ico" />
+    <Content Include="Resources\14Folder_Opened.ico" />
+    <Content Include="Resources\14Folder_Opened_New1.ico" />
+    <Content Include="Resources\19Help.ico" />
+    <Content Include="Resources\19Help_New1.ico" />
+    <Content Include="Resources\1Adminstrative.ico" />
+    <Content Include="Resources\1Adminstrative_New1.ico" />
+    <Content Include="Resources\36Printer.ico" />
+    <Content Include="Resources\36Printer_New1.ico" />
+    <Content Include="Resources\39Recent_Docs.ico" />
+    <Content Include="Resources\39Recent_Docs_New1.ico" />
+    <Content Include="Resources\40Recycle-Empty.ico" />
+    <Content Include="Resources\40Recycle-Empty_New1.ico" />
+    <Content Include="Resources\41Recycle-Full.ico" />
+    <Content Include="Resources\45Search.ico" />
+    <Content Include="Resources\45Search_New1.ico" />
+    <Content Include="Resources\49TXT_File.ico" />
+    <Content Include="Resources\51Winamp_Files.ico" />
+    <Content Include="Resources\51Winamp_Files_New1.ico" />
+    <Content Include="Resources\arriere.png" />
+    <Content Include="Resources\Autorun.ico" />
+    <Content Include="Resources\background.png" />
+    <Content Include="Resources\Bonjour.ico" />
+    <Content Include="Resources\CECamera.ico" />
+    <Content Include="Resources\CECamera_New1.ico" />
+    <Content Include="Resources\cedialer.ico" />
+    <Content Include="Resources\Copy of stock_people.png" />
+    <Content Include="Resources\Copy of system-search.png" />
+    <Content Include="Resources\Copy of xfce-system-lock.png" />
+    <Content Include="Resources\Dexplore.ico" />
+    <Content Include="Resources\directx.ico" />
+    <Content Include="Resources\document-properties.png" />
+    <Content Include="Resources\document-save.png" />
+    <Content Include="Resources\edit-add.png" />
+    <Content Include="Resources\edit-redo.png" />
+    <Content Include="Resources\favicon.ico" />
+    <Content Include="Resources\GrooveIcon.ico" />
+    <Content Include="Resources\gtk-undelete.png" />
+    <Content Include="Resources\gtk-undelete2.png" />
+    <Content Include="Resources\Installer.ico" />
+    <Content Include="Resources\Installer_New1.ico" />
+    <Content Include="Resources\Installer_New2.ico" />
+    <Content Include="Resources\keybdsip.ico" />
+    <Content Include="Resources\keybdsp2.ico" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\logo2.png" />
+    <Content Include="Resources\manual.ico" />
+    <Content Include="Resources\moi.png" />
+    <Content Include="Resources\moi2.png" />
+    <Content Include="Resources\MySharePoints.ico" />
+    <Content Include="Resources\MyWebExplorer.ico" />
+    <Content Include="Resources\netfol.ico" />
+    <Content Include="Resources\Obj_Source_HomePage.ico" />
+    <Content Include="Resources\Obj_Source_MTP.ico" />
+    <Content Include="Resources\OFFLINE.ICO" />
+    <Content Include="Resources\ONLINE.ICO" />
+    <Content Include="Resources\OnLineBusy.ico" />
+    <Content Include="Resources\OnLineIdle.ico" />
+    <Content Include="Resources\PictureViewer.ico" />
+    <Content Include="Resources\print_pref.ico" />
+    <Content Include="Resources\print_property.ico" />
+    <Content Include="Resources\print_queue.ico" />
+    <Content Include="Resources\RECL.ICO" />
+    <Content Include="Resources\red.ico" />
+    <Content Include="Resources\REMOTEL.ICO" />
+    <Content Include="Resources\ringtones.ico" />
+    <Content Include="Resources\scan_.ico" />
+    <Content Include="Resources\scan_property.ico" />
+    <Content Include="Resources\scan_property_New1.ico" />
+    <Content Include="Resources\scan_settings.ico" />
+    <Content Include="Resources\scan_settings_New1.ico" />
+    <Content Include="Resources\scan__New1.ico" />
+    <Content Include="Resources\SCDCNCLL.ICO" />
+    <Content Include="Resources\SCDRESNL.ICO" />
+    <Content Include="Resources\SCDRESPL.ICO" />
+    <Content Include="Resources\SCDRESTL.ICO" />
+    <Content Include="Resources\SMSL.ICO" />
+    <Content Include="Resources\stock_channel.png" />
+    <Content Include="Resources\stock_mail-flag-for-followup-done.png" />
+    <Content Include="Resources\stock_new-meeting.png" />
+    <Content Include="Resources\stock_people.png" />
+    <Content Include="Resources\stock_search-and-replace.png" />
+    <Content Include="Resources\sync.ico" />
+    <Content Include="Resources\TMTV.ico" />
+    <Content Include="Resources\Untitled - 1.ico" />
+    <Content Include="Resources\Untitled - 1_New1.ico" />
+    <Content Include="Resources\Untitled - 3.ico" />
+    <Content Include="Resources\Untitled - 3_New1.ico" />
+    <Content Include="Resources\Warning.ico" />
+    <Content Include="Resources\WSS.ICO" />
+    <Content Include="Resources\__TemplateIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Photo\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
